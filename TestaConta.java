@@ -1,26 +1,30 @@
 /*
- * 1) Criar um objeto da classe Conta 
- * 2) Inicializar todos os atributos deste objeto 
- * 3) Imprimir os valores dos atributos da classe Conta
+ * Globalcode - "The Developers Company"
  * 
+ * Academia do Java
  */
 class TestaConta {
 
     public static void main(String[] args) {
+        // Criacao da conta
+    	Conta cc = new Conta();
     	
-    	Conta cc = new Conta ();
-    	cc.agencia = 1;
-    	cc.numero = "1777"; 
-    	cc.banco = 234; 
-    	cc.titular = "Daniela";
-    	cc.saldo = 150.67;
-    	
-    	System.out.println("-----------------------------");
-    	System.out.println("AGENCIA: " + cc.agencia + "\t BANCO: " + cc.banco);
-    	System.out.println("NUMERO : " + cc.numero );
-    	System.out.println("TITULAR: " + cc.titular);
-    	System.out.println("SALDO  : " + cc.saldo);
-    	System.out.println("-----------------------------");
-    	
+        // Inicializacao da conta
+        cc.inicializaConta(1000 , "1", "Daniela", 1, 234);
+        
+    	// Impressao dos dados da conta
+        cc.imprimeDados();
+        
+        // Saque da conta
+        cc.saque(600);
+        
+        // Impressao dos dados da conta
+        cc.imprimeDados();
+
+        // Deposito em conta
+        cc.deposito(200);
+        
+        // Impressao dos dados da conta
+        cc.imprimeDados();
     }
 }

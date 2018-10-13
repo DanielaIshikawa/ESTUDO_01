@@ -1,20 +1,21 @@
 /*
- * 1) Criar um objeto da classe Agencia
- * 2) Inicializar todos os atributos deste objeto
- * 3) Imprimir os valores dos atributos da classe Agencia  
+ * Globalcode - "The Developers Company"
+ * 
+ * Academia do Java
  */
-
 class TestaAgencia {
 
     public static void main(String[] args) {
-    	
+        // Criacao da agencia
     	Agencia ag = new Agencia ();
     	
-    	ag.banco = 234;
-    	ag.numero = "1";
+    	// Inicializacao da agencia
+    	ag.banco = 1;
+    	ag.numero = "234";
     	
-    	System.out.println("-----------------------------"); 
-    	System.out.println("AGENCIA: " + ag.numero + "\t BANCO: " + ag.banco );
-    	System.out.println("-----------------------------");
+        // Impressao dos dados da agencia
+    	System.out.println("BANCO: " + ag.banco);
+    	System.out.println("AGENCIA: " + ag.numero);
+    
     }
 }
